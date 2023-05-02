@@ -19,39 +19,6 @@ namespace CoinCombo.Tests
       Assert.AreEqual(typeof(Coin), newQuarter.GetType());
     }
 
-    // [TestMethod]
-    // public void QuarterMethod_ReturnsQuarterValue_Quarter()
-    // {
-    //   Coin newQuarter = new Coin();
-    //   float expected = 0.25F;
-    //   float quarter = newQuarter.Quarter(expected);
-    //   Assert.AreEqual(expected, quarter);
-    // }
-    // [TestMethod]
-    // public void QuarterMethod_ReturnsFloatAmount_Quarter()
-    // {
-    //   Coin newQuarter = new Coin();
-    //   int expected = 1;
-    //   float amount = 0.25F;
-    //   Assert.AreEqual(expected, newQuarter.Quarter(amount));
-
-    // }
-    // [TestMethod]
-    // public void QuarterMethod_MathOutputsCorrectNumber_Quarter()
-    // {
-    //   Coin newQuarter = new Coin();
-    //   int expected = 3;
-    //   float amount = 0.75F;
-    //   Assert.AreEqual(expected, newQuarter.Quarter(amount));
-    // }
-    // [TestMethod]
-    // public void QuarterMethod_ReturnsStringQuarterAmount_Quarter()
-    // {
-    //   Coin newQuarter = new Coin();
-    //   string expected = "3 quarters";
-    //   float amount = 0.75F;
-    //   Assert.AreEqual(expected, newQuarter.Quarter(amount));
-    // }
     [TestMethod]
     public void QuarterMethod_AddsQuartersToList_String()
     {
@@ -61,15 +28,6 @@ namespace CoinCombo.Tests
       newQuarter.Quarter(amount);
       Assert.AreEqual(expected, Coin.Piggybank[0]);
     }
-    // [TestMethod]
-    // public void QuarterMethod_ReturnsDecimalRemainder_Decimal()
-    // {
-    //   Coin newQuarter = new Coin();
-    //   decimal expected = 0.07m;
-    //   decimal amount = 1.32m;
-    //   decimal actual = newQuarter.Quarter(amount);
-    //   Assert.AreEqual(expected, actual);
-    // }
 
     [TestMethod]
     public void DimeMethod_AddsDimesToList_String()

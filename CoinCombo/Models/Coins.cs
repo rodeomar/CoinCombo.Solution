@@ -31,7 +31,7 @@ namespace CoinCombo.Models
       Nickel(remainder); 
       }
     }
-        public void Nickel(decimal r)
+    public void Nickel(decimal r)
     {
       decimal nickel = 0.05m;
       if (r < nickel)
