@@ -98,5 +98,13 @@ namespace CoinCombo.Tests
       change.Nickel(amount);
       Assert.AreEqual(expected, Coin.Piggybank[0]);
     }
+        public void PennyMethod_AddsPennyToList_String()
+    {
+      Coin change = new Coin();
+      string expected = "1 penny(s)";
+      decimal amount = 0.01m;
+      change.Penny(amount);
+      Assert.AreEqual(expected, Coin.Piggybank[0]);
+    }
   }
 }
