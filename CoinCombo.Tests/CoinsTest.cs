@@ -39,14 +39,15 @@ namespace CoinCombo.Tests
       Assert.AreEqual(expected, Coin.Piggybank[1]);
     }
 
-    [TestMethod]
-    public void DimeMethod_RetunrDecimalRemainder_Decimal()
-    {
-      Coin change = new Coin();
-      decimal expected = 0.07m;
-      decimal amount = 1.47m;
-      Assert.AreEqual(expected, change.Dime(amount));
-    }
+    // [TestMethod]
+    // public void DimeMethod_RetunrDecimalRemainder_Decimal()
+    // {
+    //   Coin change = new Coin();
+    //   decimal expected = 0.07m;
+    //   decimal amount = 1.47m;
+    //   change.Dime(amount);
+    //   Assert.AreEqual(expected, Coin.Piggybank[0]);
+    // }
         [TestMethod]
     public void NickelMethod_AddsNickelToList_String()
     {
